@@ -1,0 +1,234 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+body {
+  background-color: #282828;
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  font-family: helvetica-light;
+  text-align: center;
+  padding: 15px;
+  color: #ccc;
+  min-width: 300px;
+  font-size: 10pt;
+}
+
+span {
+  float: left;
+}
+
+.clock {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.toptitle {
+  line-height: 85px;
+  text-align: center;
+  background-color: #777;
+  font-size: 30pt;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+}
+
+.session {
+  background-color: #555;
+}
+
+.break {
+  background-color: #454545;
+}
+
+.name {
+  text-align: center;
+  width: 33%;
+}
+
+.sliderbox {
+  padding: 15px;
+  width: 50%;
+}
+
+.sliderval {
+  text-align: center;
+  width: 17%;
+}
+
+.start {
+  line-height: 85px;
+  text-align: center;
+  background-color: #575;
+  font-size: 30pt;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: #595;
+}
+
+.start:active {
+  background-color: #484;
+}
+
+.startactive {
+  background-color: #494;
+}
+
+.clockface {
+  background-color: #222;
+  overflow:hidden; 
+  position:relative;
+  line-height: 200px;
+}
+
+.display {
+  position: relative;
+  z-index:9;
+  text-align: center;
+  cbackground-color: #222;
+  font-size: 75pt;
+}
+
+.progress {
+  z-index:1;
+  height:100%;
+  position: absolute;
+  width: 0%;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.workprogress {
+  background-color: #242;
+}
+
+.breakprogress {
+  background-color: #336;
+}
+
+.lowtime {
+  background-color: #338;
+}
+
+.donetime {
+  background-color: #844;
+}
+
+.reset {
+  line-height: 45px;
+  text-align: center;
+  background-color: #655;
+  font-size: 20pt;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #855;
+}
+
+.reset:active {
+  background-color: #844;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E6E6E6;
+  border-radius: 0px;
+  border: 1px solid #919191;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #919191;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: #919191;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E6E6E6;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E6E6E6;
+  border-radius: 0px;
+  border: 1px solid #919191;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #FFFFFF;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: #333333;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #E6E6E6;
+  border: 1px solid #919191;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E6E6E6;
+  border: 1px solid #919191;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #FFFFFF;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: #333333;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #E6E6E6;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E6E6E6;
+}

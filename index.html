@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock - FreeCodeCamp Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body>
+  <div class="clock">
+    <div class="toptitle">Pomodoro Clock</div>
+      <div class="settings session">
+        <span class="name">Session Length</span>
+        <span class="sliderbox"><input id="sessionlen" type="range" min="5" max="75" value="25" /></span>
+        <span id="sessionvaldisplay" class="sliderval">25 min</span>
+      </div>
+      <div class="settings break">
+        <span class="name">Break Length</span>
+        <span class="sliderbox"><input id="breaklen" type="range" min="1" max="10" value="5" /></span>
+        <span id="breakvaldisplay" class="sliderval">5 min</span>
+      </div>
+    <div>
+      <div id="startbutton" class="start">Start</div>
+      <div class="clockface">
+        <div id="progressbar" class="progress"></div>
+        <div id="timedisplay" class="display">25:00</div>
+      </div>  
+      <div id="resetbutton" class="reset">Reset</div>
+      <div id="test"></div>
+    </div>
+  </div>
+  <footer>Yo Yo from Tom.</footer>
+</body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
